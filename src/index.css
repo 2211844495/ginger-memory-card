@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
+body {
+  background-color: rgb(239, 158, 129);
+}
+* {
+  font-family: 'Catamaran';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  margin-top: 10px;
+  margin-left: 110px;
+  border: none;
+  width: 170px;
+  height: 40px;
+  font-size: 1.3rem;
+  color: rgb(242, 221, 211);
+  background-color: rgb(185, 49, 0);
+  border-radius: 10px;
+  font-family: 'Catamaran';
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.279);   
+}
+.btn:active {
+  box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.279);   
+  background-color: rgb(130, 37, 3);
+}
+.grid-cards {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-gap: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .grid-cards {
+    width: 900px;
+    margin-top: 100px;
+  }
+}

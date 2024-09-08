@@ -1,0 +1,27 @@
+.card {
+    width: 97%;
+    height: 200px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 5px 10px;
+    background-color: rgb(211, 82, 31);
+    font-size: 0.9rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+    box-shadow: 1px 1px 1px black;
+}
+.card > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: fill;
+    overflow: hidden;
+}
+.card:active {
+    background-color: rgb(150, 58, 22);
+}
